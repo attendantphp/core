@@ -2,7 +2,9 @@
 
 namespace Attendant\Core\Parser;
 
-interface PageParser
+interface PageParser extends CollectionParser
 {
-    //
+    public function page(): int|string;
+
+    public function perPage(): int;
 }
